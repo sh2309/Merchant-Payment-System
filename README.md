@@ -34,8 +34,8 @@ This project demonstrates how blockchain can be integrated into digital payment 
 ## Getting Started
 ### Prerequisites
 Before running the project, make sure the following are installed:
-1. **Python 3.x**
-2. **Ganache** (Local Ethereum Blockchain)
+1. Python 3.x
+2. Ganache (Local Ethereum Blockchain)
 3. Required Python libraries:
    - Flask
    - Web3
@@ -131,6 +131,3 @@ Private keys are stored locally in SQLite for testing convenience. In a producti
 ## License
 This project is licensed under the MIT License.
 You are free to use, modify, and distribute this project for educational and development purposes.
-
-```
-```
