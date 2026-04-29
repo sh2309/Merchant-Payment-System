@@ -1,4 +1,4 @@
-````markdown
+
 # Merchant Payment System using Blockchain (Python & Ganache)
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
