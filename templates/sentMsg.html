@@ -1,0 +1,15 @@
+<html>
+
+<body>
+    
+    <h1>{{message}}</h1>
+    <p>Sender's Address: {{s_addr}}</p>
+    <p>Receiver's Address: {{r_addr}}</p>
+    <p>Amount Sent: {{amt}}Eth</p>
+    <p>Transaction hash: {{txn_hash}}</p>
+    <form action="{{url_for('home')}}" method="get">
+        <button>Go Back </button>
+        <input type="hidden" name="username" id="username" value="{{username}}">
+    </form>
+</body>
+</html>

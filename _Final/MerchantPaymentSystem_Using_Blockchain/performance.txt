@@ -1,0 +1,3 @@
+ ---PERFORMANCE METRICS--- 
+Time taken to login: 0.0
+Time taken to check balance: 0.012547731399536133

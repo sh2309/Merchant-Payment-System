@@ -1,0 +1,13 @@
+<html>
+    <body>
+        
+        <h1>Receiver Address : {{addr}}</h1>
+        <h1>QR CODE:</h1>
+        <img src="{{url_for('static', filename='qr.png')}}" alt="QR CODE">
+
+        <form action="{{url_for('home')}}" method="get">
+            <button>Go Back </button>
+            <input type="hidden" name="username" id="username" value="{{username}}">
+        </form>
+    </body>
+</html>

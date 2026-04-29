@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            var privateKeyVisible = false;
+    
+            function togglePrivateKey() {
+                var privateKeyElement = document.getElementById('private-key');
+                var btnElement = document.getElementById('showbtn');
+    
+                if (privateKeyVisible) {
+                    privateKeyElement.style.display = 'none';
+                    privateKeyVisible = false;
+                    btnElement.innerHTML = 'show';
+                } else {
+                    privateKeyElement.style.display = 'inline';
+                    privateKeyVisible = true;
+                    btnElement.innerHTML = 'hide';
+                }
+            }
+            window.addEventListener('beforeunload', function () {
+                // Clear specific form elements
+                document.getElementById('sendForm').Amount.value = 0;
+            });
+        </script>
+    </head>
+    <body>
+        <form action="sentMsg" method="post" id="sendForm">
+            <input type="hidden" name="username" value="{{user}}">
+            <label>Enter Receiver's Wallet Address: </label>
+            <input type="text" name="ReceiverAddress">
+            <br>
+            <label>Enter Amount to be sent: </label>
+            <input type="number" name="Amount" id="Amount"><br>
+            <input type="submit" value="Send">
+        </form>
+        <div>
+            Your Account Address: {{ address }}
+        </div>
+        Your Private Key:
+        <span id="private-key" style="display: none;">{{ privateKey }}</span><br>
+        <button onclick="togglePrivateKey()" id="showbtn">show</button><br>
+
+    </body>
+</html>
